@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+void function(int *ptr);
+main()
+{
+	int var;
+	cout << "Enter the value of variable : ";
+	cin >> var;
+	
+	function(&var);
+	
+}
+void function(int *ptr)
+{
+	cout << "The address of pointer is : " << ptr << endl;
+	
+	// printing value of pointer
+	cout << "The value of pointer is : " << *ptr;
+}
